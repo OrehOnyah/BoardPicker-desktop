@@ -1,0 +1,20 @@
+header {
+	position:fixed;
+	background-color: #00007716;
+	left:0;
+	top:0;
+	width:100%;
+}
+footer{
+	background-color: #77000016;
+}
+.inline-block{
+	display:inline-block;
+}
+.right{
+	float:right;
+}
+#header_margin{
+	background-color:#00000033;
+}
+

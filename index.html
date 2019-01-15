@@ -2,18 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>BoardPicker desktop</title>
+	<link rel= "stylesheet" type="text/css" href="style/index.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
+	  <header>
+		  <div class="inline-block" id="title">
+			<h1>BoardPicker</h1>
+		  </div>
+		  <img class="inline-block right" src="https://mblogthumb-phinf.pstatic.net/20160711_284/koowq_1468239339703MiP53_JPEG/%B8%DE%B4%BA_%BF%F8%C7%FC_%BD%C9%C7%C3%BE%C6%C0%CC%C4%DC-01.png?type=w2" width="50px"/>
+	  </header>
+	<!-- All of the Node.js APIs are available in this renderer process. -->
+	<div id="header_margin"/>
+	<script>
+	document.getElementById('header_margin').style.height=document.getElementsByTagName('header')[0].getBoundingClientRect().height+"px"
+	</script>
+	<footer>
+	<article>
+	footer 내용 추가점
+	</article>
+	<article>
+	<small>
+		We are using Node.js <script>document.write(process.versions.node)</script>,
+		Chromium <script>document.write(process.versions.chrome)</script>,
+		and Electron <script>document.write(process.versions.electron)</script>.
+	</small>
+	</article>
+	</footer>
+	
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./ui_script/index.js')
     </script>
   </body>
 </html>
