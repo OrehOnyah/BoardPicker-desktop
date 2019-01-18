@@ -18,6 +18,8 @@ footer{
 	background-repeat:repeat-x;
 	background-image: url("../image/index/divider_a.png");
 }
+
+/*noinspection ALL*/
 .pixel{/*해상도가 낮은 그림을 띄우면 기본적으로 안티에일리어싱이 적용되는데 이 클래스를 적용하면 원본대로 나옴.*/
 	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
 	image-rendering: -moz-crisp-edges;          /* Firefox                        */
