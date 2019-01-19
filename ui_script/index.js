@@ -2,6 +2,7 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 const UI_DEBUGGING = false;
+const WEBVIEW_TRANSPORT_DEBUGGING=true;
 window.onload = function(){/*
     document.getElementById('header_divider').style.marginTop = document.getElementsByTagName('header')[0].getBoundingClientRect().height + "px";*/
     //메인 webview 높이 맞춤
@@ -11,8 +12,12 @@ window.onload = function(){/*
 window.onresize = function(){
     //메인 webview 높이 맞춤
     document.getElementById('webview_main').style.height=(window.innerHeight-document.getElementsByTagName('header')[0].getBoundingClientRect().height)+'px';
+    if(WEBVIEW_TRANSPORT_DEBUGGING){
+        document.getElementById('webview_main').executeJavaScript('__BoardPickerTools.test_trans_func()' ,function(asdf){
+            alert(asdf);
+        });
+    }
     makeSectionsToPage();
-
 };
 function makeSectionsToPage(){//모든 페이지 클래스를 가지는 태그에 대해 하나의 페이지 크기로 만들어버림.
     let elements = document.getElementsByClassName('page');
