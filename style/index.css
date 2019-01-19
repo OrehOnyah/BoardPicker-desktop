@@ -1,3 +1,7 @@
+*{
+	padding:0;
+	margin:0;
+}
 header {
 	position:fixed;
 	background-color: #00007716;
@@ -14,10 +18,15 @@ footer{
 .right{
 	float:right;
 }
-#menu_icon{
+#list_icon{
 	width:68px;
 	height:68px;
-	background-image: url(../image/index/menu.png);
+	background-image: url(../image/index/list.png);
+}
+#add_icon{
+	width:68px;
+	height:68px;
+	background-image: url(../image/index/add.png);
 }
 
 /*noinspection ALL*/
