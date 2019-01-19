@@ -14,16 +14,17 @@ footer{
 .right{
 	float:right;
 }
-#header_divider{
-	background-repeat:repeat-x;
-	background-image: url("../image/index/divider_a.png");
+#menu_icon{
+	width:68px;
+	height:68px;
+	background-image: url(../image/index/menu.png);
 }
 .pixel{/*해상도가 낮은 그림을 띄우면 기본적으로 안티에일리어싱이 적용되는데 이 클래스를 적용하면 원본대로 나옴.*/
 	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
 	image-rendering: -moz-crisp-edges;          /* Firefox                        */
 	image-rendering: -o-crisp-edges;            /* Opera                          */
 	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-	image-rendering: pixelated; /* Chrome */
+	image-rendering: pixelated; 				/* Chrome 						  */
 	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
 	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
