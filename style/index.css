@@ -1,41 +1,47 @@
-*{
-	padding:0;
-	margin:0;
+* {
+    padding: 0;
+    margin: 0;
 }
+
 header {
-	position:fixed;
-	background-color: #00007716;
-	left:0;
-	top:0;
-	width:100%;
+    position: fixed;
+    background-color: #00007716;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
-footer{
-	background-color: #77000016;
+
+footer {
+    background-color: #77000016;
 }
-.inline-block{
-	display:inline-block;
+
+.inline-block {
+    display: inline-block;
 }
-.right{
-	float:right;
+
+.right {
+    float: right;
 }
-#list_icon{
-	width:68px;
-	height:68px;
-	background-image: url(../image/index/list.png);
+
+#list_icon {
+    width: 68px;
+    height: 68px;
+    background-image: url(../image/index/list.png);
 }
-#add_icon{
-	width:68px;
-	height:68px;
-	background-image: url(../image/index/add.png);
+
+#add_icon {
+    width: 68px;
+    height: 68px;
+    background-image: url(../image/index/add.png);
 }
 
 /*noinspection ALL*/
-.pixel{/*해상도가 낮은 그림을 띄우면 기본적으로 안티에일리어싱이 적용되는데 이 클래스를 적용하면 원본대로 나옴.*/
-	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-	image-rendering: -moz-crisp-edges;          /* Firefox                        */
-	image-rendering: -o-crisp-edges;            /* Opera                          */
-	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-	image-rendering: pixelated; 				/* Chrome 						  */
-	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+.pixel { /*해상도가 낮은 그림을 띄우면 기본적으로 안티에일리어싱이 적용되는데 이 클래스를 적용하면 원본대로 나옴.*/
+    image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges; /* Firefox                        */
+    image-rendering: -o-crisp-edges; /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome 						    */
+    image-rendering: optimize-contrast; /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
 }
