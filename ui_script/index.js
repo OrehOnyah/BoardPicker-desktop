@@ -42,20 +42,18 @@ function makeElementWithPage(element) {
 /* 버튼 이벤트 관련 */
 if(window.addEventListener){
     window.addEventListener('load', function () {
-        alert('index.js');
-        document.getElementById('add_icon').onclick=function(){
-            document.getElementById('webview_main').executeJavaScript('__BoardPickerTools.set_atag_onclick()', function (asdf) {
-                alert('inject succesed');
-            });
-        }
+        add_icon_listener_attach();
     });
 }
 else if(window.attachEvent){
     window.attachEvent('onload', function () {
-        document.getElementById('add_icon').onclick=function(){
-            document.getElementById('webview_main').executeJavaScript('__BoardPickerTools.set_atag_onclick()', function (asdf) {
-                alert('inject succesed');
-            });
-        }
+        add_icon_listener_attach();
     });
+}
+function add_icon_listener_attach(){
+    document.getElementById('add_icon').onclick=function(){
+        document.getElementById('webview_main').executeJavaScript('__BoardPickerTools.set_atag_onclick()', function (asdf) {
+            alert('inject succesed');
+        });
+    }
 }
